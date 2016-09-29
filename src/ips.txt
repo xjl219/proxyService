@@ -1,0 +1,28 @@
+
+代理ip集中管理,程序会检查ip是否可以代理访问指定 网址
+初始化时默认所有ip是可用的
+在调用
+
+
+程序可在启动初始化：
+java -jar proxyserver 8182 -f /home/ips.txt
+程序可在启动恢复：
+java -jar proxyserver 8182 -recover
+
+查看全部ip
+
+http://localhost:8182/allip
+
+增加服务：
+domain:www.baidu.com, type:1, url:http://www.baidu.com, check:200
+
+http://localhost:8182/add/www.baidu.com?u=http://www.baidu.com&t=1&c=200
+ domain ：add a proxy domain . exmaple: www.baidu.com
+ u is url: http://www.baidu.com
+
+ip exmaple:
+192.168.11.129:8080
+192.168.11.130:8090
+192.168.11.131:8010
+192.168.11.132:8000
+192.168.11.133:80
