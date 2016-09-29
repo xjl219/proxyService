@@ -37,20 +37,28 @@ regester:
 	 * register a proxy ip service for specified domain and check rule of  available ip
 	 * 
 	 * @param host proxy ip server address
+	 
 	 * Example http://192.168.1.8:8182
 	 * @param domain 
 	 * Example baidu.com
 	 * @param type Check the way 
+	 
 	 * 	1: state is 200 
+	 
 	 *  2: Content length less then specified number
+	 
 	 *  4: Content cantains specified key
-	 * @param url use it to check
+	 
+	 * @param url use it to check 
+	 
 	 * @param rule rule of check it  
 	 
 domain:www.baidu.com, type:1, url:http://www.baidu.com, check:200
 
 http://localhost:8182/register/www.baidu.com?u=http://www.baidu.com&t=1&c=200
+
  domain ：add a proxy domain . exmaple: www.baidu.com
+ 
  u is url: http://www.baidu.com
  
  
