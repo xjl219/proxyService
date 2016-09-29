@@ -58,9 +58,9 @@ public class ProxyServer {
 
 		System.out.println("Server started on port " + server.getPort());
 		System.out.println("Press key to stop server");
-		System.in.read();
+//		System.in.read();
 		System.out.println("Stopping server");
-		comp.stop();
+//		comp.stop();
 		System.out.println("Server stopped");
 	}
 }

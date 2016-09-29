@@ -84,7 +84,7 @@ public class ProxyClient  {
 		 return exe(String.format(DISABLEIP, domain,ip));
 	 }
 	public String disableIP(String ip)throws Exception{
-		 return disableIP(String.format(DISABLEIP, curentDomain,ip));
+		 return disableIP(curentDomain,ip);
 	 }
 	
 	public String register(String domain, int type,  String url, Object rule) throws Exception{
